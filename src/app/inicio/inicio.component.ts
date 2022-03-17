@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
+import { Postagem } from '../model/Postagem';
+import { PostagemService } from '../service/postagem.service';
 
 @Component({
   selector: 'app-inicio',
@@ -9,10 +11,14 @@ import { environment } from 'src/environments/environment.prod';
 })
 export class InicioComponent implements OnInit {
 
+  postagem: Postagem= new Postagem()
+
   constructor(
 
-    private router: Router
-  ) { }
+    private router: Router,
+    private  PostagemService: PostagemService
+  
+    ) { }
 
   ngOnInit(): void {
 
@@ -21,6 +27,10 @@ export class InicioComponent implements OnInit {
       
       this.router.navigate(['/entrar'])
     }
+  }
+
+  publicar(){
+    
   }
 
 }
