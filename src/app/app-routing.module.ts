@@ -15,9 +15,9 @@ const routes: Routes = [
   {path:'cadastrar',component:CadastrarComponent},
   {path: 'inicio',component:InicioComponent},
   {path :'tema',component: TemaComponent},
-  {path :'tema-edit/: id' ,component: TemaEditComponent},
+  {path :'tema-edit/:id' , component: TemaEditComponent},
   {path : 'tema-delete/:id', component : TemaDeleteComponent}
-];
+];  
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
