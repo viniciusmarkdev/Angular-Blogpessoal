@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+<<<<<<< HEAD
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms'; 
 import { AppRoutingModule } from './app-routing.module';
@@ -40,6 +41,21 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
     provide : LocationStrategy,
      useClass: HashLocationStrategy
   }],
+=======
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+>>>>>>> 287220c7387286219977d593c5117640d4d2047f
   bootstrap: [AppComponent]
 })
 export class AppModule { }

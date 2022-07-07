@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+<<<<<<< HEAD
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
@@ -18,6 +19,10 @@ const routes: Routes = [
   {path :'tema-edit/:id' , component: TemaEditComponent},
   {path : 'tema-delete/:id', component : TemaDeleteComponent}
 ];  
+=======
+
+const routes: Routes = [];
+>>>>>>> 287220c7387286219977d593c5117640d4d2047f
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

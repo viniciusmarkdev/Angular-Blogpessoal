@@ -4,7 +4,10 @@
   "compilerOptions": {
     "outDir": "./out-tsc/app",
     "types": []
+<<<<<<< HEAD
     
+=======
+>>>>>>> 287220c7387286219977d593c5117640d4d2047f
   },
   "files": [
     "src/main.ts",
